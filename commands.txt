@@ -1,0 +1,4 @@
+python -mm pytest tests/ --html=reports/pytest/report.html
+coverage -> pip install pytest-cov
+python -m pytest --cov tests/
+coverage html -d reports/coverage --omit=tests/test_pytest_func.py
