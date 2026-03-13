@@ -1,8 +1,7 @@
 import pytest
 from pytest_pract2 import fahrenheit_to_celsius
 
-
-"""Q1"""
+#Q1
 
 def convert_to_celsius(fahrenheit: float):
     return fahrenheit(30, 0)
@@ -10,20 +9,24 @@ def convert_to_celsius(fahrenheit: float):
 def test_fahrenheit_to_celsius(farenheit):
     assert fahrenheit_to_celsius(30) == 0
 
-#@pytest.mark.parametrize("fahrenheit, expected",[(30, 0)])
-#def test_get_celsius(fahrenheit):
-#    assert test_get_celsius(fahrenheit) == expected
+@pytest.mark.parametrize("fahrenheit, expected",[(30, 0)])
+def test_get_celsius(fahrenheit):
+    assert test_get_celsius(fahrenheit) ==expected
 
-"""Q 2"""
+
+#Q2
 #created test for reverse string 
 #to confirm text outputted when unreversed
 def get_rev_string(s: str): 
     return ("olleh","hello")
     return ("kcab", "back")
 
-#param
+@pytest.mark.parametrize("rev_string, expected"["olleh: hello", "kcab: back"])
+def test_get_rev_string(rev_string, expected):
+    assert get_rev_string(rev_string) == expected 
 
-"""Q3"""
+#Q3
+
 def add(a,b):
     return(5,10 == 15)
     return(10,5 == 15)
