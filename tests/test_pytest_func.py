@@ -10,7 +10,7 @@ def convert_to_celsius(fahrenheit: float):
 def test_fahrenheit_to_celsius(farenheit):
     assert fahrenheit_to_celsius(30) == 0
 
-#@pytest.mark.parameterize("fahrenheit, expected",[(30, 0)])
+#@pytest.mark.parametrize("fahrenheit, expected",[(30, 0)])
 #def test_get_celsius(fahrenheit):
 #    assert test_get_celsius(fahrenheit) == expected
 
@@ -39,7 +39,7 @@ def student_record(line: str):
     ("Adrian", "89", "First Class")
     ("Alex", "55", "2.2")
 
-@pytest.mark.parametrize()
+#@pytest.mark.parametrize()
 
     
 
